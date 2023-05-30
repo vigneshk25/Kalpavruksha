@@ -1,11 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 import {Link , NavLink} from 'react-router-dom'
-import { links } from '../data';
+import { links } from '../../data';
 import {AiOutlineBars} from 'react-icons/ai'
 import {AiOutlineClose} from 'react-icons/ai'
 import './navbar.css'
-import  Logo from '../imgs/kv-1.png'
+
+import Logo from "../../imgs/kv-1.png";
 
 const Navbar = () => {
     const [isNavShowing, setIsNavShowing] = useState(false);
