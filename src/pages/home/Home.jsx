@@ -5,6 +5,7 @@ import Image from "../../imgs/v204_725.png";
 import MainHeader from "../../components/MainHeader";
 import icon from "../../imgs/icon.png";
 import img1 from "../../imgs/img1.png";
+import GetinTouch from "./GetinTouch";
 
 const Home = () => {
   return (
@@ -146,38 +147,7 @@ const Home = () => {
       </div>
 
       {/* get in touch */}
-
-      <div className="getInTouch">
-        <div>
-          <h1>Get in Touch</h1>
-          <p>Let us know how we can help </p>
-        </div>
-
-        <div className="inputBox">
-          <p className="textName">Name</p>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Your Full Name"
-          />
-
-          <p className="textName">Email</p>
-          <input type="text" name="name" id="name" placeholder="me@mail.com" />
-
-          <p className="textName">Phone Number</p>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="+91 00000 00000"
-          />
-
-          <div>
-            <button className="msgBtn">Send Message</button>
-          </div>
-        </div>
-      </div>
+      <GetinTouch />
     </>
   );
 };

@@ -1,47 +1,51 @@
-*,*::before, *::after{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 /* General style */
-body{
-    font-family: 'poppins' , sans-serif;
-    color:black ;
-    line-height: 1.7;
-<<<<<<< HEAD
-    overflow-x: hidden;
-=======
-    overflow-x:hidden ;
->>>>>>> b3addb9113a8a0d505870b5e54d41302400c7030
-    background-color: white;
+body {
+  font-family: "poppins", sans-serif;
+  color: black;
+  line-height: 1.7;
+
+  overflow-x: hidden;
+
+  background-color: white;
 }
-.continer{
-    width: 80%;
-    max-width: 1920px;
-    margin-inline: auto;
+.continer {
+  width: 80%;
+  max-width: 1920px;
+  margin-inline: auto;
 }
 
-h1, h2, h3, h4 ,h5 {
-    color: gray;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: gray;
 }
 
-h1{
-    font-size: 3rem;
+h1 {
+  font-size: 3rem;
 }
 
-h2{
-    font-size: 2rem;
+h2 {
+  font-size: 2rem;
 }
-a{
-    color: rgb(54, 53, 53);
+a {
+  color: rgb(54, 53, 53);
 }
 
-img{
-    display: block;
-    object-fit: cover;
-    width: 100%;
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
 }

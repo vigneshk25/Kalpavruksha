@@ -1,75 +1,77 @@
 /* footer */
 
-footer {
-  background-color: rgb(85, 165, 199);
-  margin-top: 7rem;
-  padding-top: 3rem;
-  font-size: 0.9rem;
-  color: black;
+footer{
+    background-color: rgb(85, 165, 199);
+    margin-top: 7rem;
+    padding-top: 3rem;
+    font-size: 0.9rem;
+    color: black;
 }
 
-.footer__container {
-  display: grid;
-  grid-template-columns: 40rem 1fr 1fr 1fr;
-  gap: 3rem;
+.footer__container{
+    display: grid;
+    grid-template-columns: 40rem 1fr 1fr 1fr; 
+    gap: 3rem;
+
 }
-.logoone {
-  width: 300px;
-  align-items: center;
-  margin: auto;
+.logoone{
+        width: 300px;
+        align-items: center;
+        margin: auto;
 }
-.footer__links {
-  margin-top: 80px;
+.footer__links{
+    margin-top: 80px;
 }
 
-.footer__pr {
-  font-size: 12px;
+.footer__pr{
+    font-size: 12px;
 }
-.footer__container article {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.2rem;
-  text-align: center;
-  margin-left: 150px;
+.footer__container article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    text-align: center;
+    margin-left: 150px;
+
 }
 .footer__container article p {
-  margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
-.footer__container article h4 {
-  margin-bottom: 0.6rem;
-  font-size: 1rem;
+.footer__container article h4{
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
 }
 
-.footer_social {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin: auto;
-  margin-top: 1.6rem;
+.footer_social{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: auto;
+    margin-top: 1.6rem;
 }
 
 .footer_social a {
-  background-color: rgb(85, 165, 199);
-  padding: 0.8rem;
-  border: 1px solid transparent;
-  border-radius: 20px;
+    background-color: rgb(85, 165, 199);
+    padding: 0.8rem;
+    border: 1px solid transparent;
+    border-radius:20px;
 }
 
-.footer_social a svg {
-  color: black;
+.footer_social a svg{
+    color: black;
 }
 
-.footer_social a:hover {
-  border-color: black;
-  background-color: white;
+.footer_social a:hover{
+    border-color: black;
+    background-color: white;
 }
 
-.copyright {
-  color: black;
-  text-align: center;
-  padding: 1.5rem 0;
-  border-top: 2px solid white;
-  margin-top: 5rem;
+.copyright{
+    color: black;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top:  2px solid white;
+    margin-top: 5rem;
 }

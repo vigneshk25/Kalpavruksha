@@ -1,29 +1,17 @@
-import { React, useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { links } from "../../data";
+import { links } from "../data";
 import { AiOutlineBars } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import "./navbar.css";
-
-import Logo from "../../imgs/kv-1.png";
+import Logo from "../imgs/kv-1.png";
 
 const Navbar = () => {
   const [isNavShowing, setIsNavShowing] = useState(false);
-  const [active, setActive] = useState(false);
-
-  const isActive = () => {
-    window.scrollY > 0 ? setActive(true) : setActive(false);
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", isActive);
-    return () => {
-      window.removeEventListener("scroll", isActive);
-    };
-  }, [active]);
 
   return (
-    <nav className={active ? "navbar active" : "navbar"}>
+    <nav>
       <div className="continer nav_continer">
         <Link to="/" className="logo" onClick={() => setIsNavShowing(false)}>
           <img src={Logo} alt="navlogo" />

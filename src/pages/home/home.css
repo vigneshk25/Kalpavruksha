@@ -167,15 +167,32 @@ img {
 /* get in touch */
 
 .getInTouch {
-  height: calc(100vh - 18rem);
+  height: calc(110vh - 18rem);
   text-align: center;
   align-items: center;
   margin: auto;
 }
-#name {
+#name,
+#email,
+#phone {
   border: 1px solid black;
   width: 30%;
   padding: 10px 8px;
+}
+#name:focus {
+  background-color: #e3f4f4;
+  color: rgb(0, 0, 0);
+  font-size: large;
+}
+#email:focus {
+  background-color: #e3f4f4;
+  color: rgb(0, 0, 0);
+  font-size: large;
+}
+#phone:focus {
+  background-color: #e3f4f4;
+  color: rgb(0, 0, 0);
+  font-size: large;
 }
 .msgBtn {
   padding: 20px;
