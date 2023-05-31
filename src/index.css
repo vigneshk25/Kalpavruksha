@@ -12,7 +12,11 @@ body{
     font-family: 'poppins' , sans-serif;
     color:black ;
     line-height: 1.7;
+<<<<<<< HEAD
     overflow-x: hidden;
+=======
+    overflow-x:hidden ;
+>>>>>>> b3addb9113a8a0d505870b5e54d41302400c7030
     background-color: white;
 }
 .continer{
