@@ -7,6 +7,7 @@ import Gallery from './pages/gallery/Gallery';
 import Services from './pages/services/Services';
 import Notfound from './pages/notfound/Notfound';
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
                 <Route path="contact" element={<Contact/>}/>
                 <Route path="*" element={<Notfound/>}/>
             </Routes>
+            <Footer/>
         </BrowserRouter>
     )
 }

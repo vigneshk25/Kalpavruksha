@@ -1,0 +1,238 @@
+.main__header{
+    width: 100vw;
+    height: calc(100vh - 3rem);
+    display: grid;
+    margin-top: 3rem;
+    place-items: center;
+    background-color: whitesmoke;
+}
+
+.main__header-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+    margin: 10px;
+
+}
+
+.main__header-left{
+    margin-left: 40px;
+    margin-top: -3rem;
+    text-align: center;
+    align-items: center;
+}
+
+.main__header-left h1{
+    font-size: 36px;
+}
+
+.main__header-left p{
+     margin: 1rem 0 3.5rem;
+}
+
+a{
+    color: #000;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.btn{
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    background:  rgb(85, 165, 199);
+    border-radius: 1.5rem;
+    transition: all 500ms ease;
+}
+
+.btn:hover{
+    background-color: green;
+    color:  white;
+    border: 1px solid  rgb(85, 165, 199);
+}
+
+.btn.lg{
+    padding: 1.2rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+}
+
+.btn.sm{
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+}
+
+.main__header-right{
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.main_header-cricle{
+    width: 35rem;
+    height: 25rem;
+}
+.main_header-image{
+    position: relative;
+}
+
+
+
+
+
+/* home care */
+
+.whyKV{
+    width: 100vw;
+    height: calc(100vh - 15rem);
+}
+
+.homeCare{
+    text-align: center;
+    padding: 1rem;
+}
+.icon_pra{
+    padding: 3rem 9rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconImg{
+    width: 150px;
+    height: 150px;
+}
+
+
+/* vison */
+.vison{
+    padding: 2rem;
+    background-color: rgb(218, 216, 216);
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 50px 1px;
+
+}
+.visionFlex{
+    display: flex;
+    gap: 50px;
+}
+.visionLeft{
+    width: 60% ;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.visionLeft>h2{
+    margin: 20px;
+}
+.visionImg{
+    width: 25rem;
+    height: 20rem;
+}
+
+
+
+
+/* servics */
+
+.servics{
+    width: 100vw;
+    height: calc(100vh - 6rem);
+}
+
+.servics_text{
+    text-align: center;
+    padding: 1rem;
+}
+.service_icon{
+    padding: 3rem 9rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconImg{
+    width: 150px;
+    height: 150px;
+}
+.readmore1{
+    text-align: center;
+    text-decoration: underline;
+}
+.ser_pra{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+/* get in touch */
+
+.getInTouch{
+    height: calc(100vh - 18rem);
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+#name{
+    border: 1px solid black;
+    width: 30%;
+    padding: 10px 8px ;
+}
+.msgBtn{
+    padding: 20px;
+    background-color: rgb(85, 165, 199); 
+    font-family: poppins;
+    border-radius: 20px;
+    margin: 10px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.textName{
+    text-align: right;
+}
+
+/* About */
+.aboutus{
+    padding: 2rem;
+    background-color: rgb(218, 216, 216);
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 50px 1px;
+
+}
+.aboutFlex{
+    display: flex;
+    gap: 50px;
+}
+.aboutLeft{
+    width: 60% ;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.aboutLeft>h2{
+    margin: 20px;
+}
+.aboutusimg{
+    width: 25rem;
+    height: 20rem;
+}
