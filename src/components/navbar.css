@@ -1,5 +1,5 @@
 nav{
-    height: 5rem;
+    height: 6rem;
     width: 100vw;
     background-color: rgb(85, 165, 199);
     display: grid;
@@ -8,6 +8,11 @@ nav{
     top: 0;
     right: 100;
     z-index: 99;
+}
+
+.nav_logo{
+  width: 150px;
+  height: 80px;
 }
 
 /* only show medium and small screen */

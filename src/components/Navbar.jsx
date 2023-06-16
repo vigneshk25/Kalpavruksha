@@ -5,7 +5,9 @@ import { links } from "../data";
 import { AiOutlineBars } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import "./navbar.css";
-import Logo from "../imgs/kv-1.png";
+import logo from '../../src/imgs/2.png';
+
+
 
 const Navbar = () => {
   const [isNavShowing, setIsNavShowing] = useState(false);
@@ -14,7 +16,7 @@ const Navbar = () => {
     <nav>
         <div className="continer nav_continer">
             <Link to='/' className='logo' onClick={()=> setIsNavShowing(false)}>
-                <img src={Logo} alt="navlogo"  data-aos="fade-down" data-aos-delay="100"  data-aos-duration="1000"/>
+                <img src={logo} alt="navlogo" className="nav_logo" data-aos="fade-down" data-aos-delay="100"  data-aos-duration="1000"/>
             </Link>
             <ul  className={`nav_links ${isNavShowing ? 'show__nav' : 'hide__nav'}`}>
                 {
