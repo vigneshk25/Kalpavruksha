@@ -49,7 +49,6 @@ a {
   color: rgb(54, 53, 53);
 }
 
-<<<<<<< HEAD
 img{
     display: block;
     object-fit: cover;
@@ -157,10 +156,3 @@ img{
             font-size: 0.85rem;
         }
 }
-=======
-img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-}
->>>>>>> e524aac416cc7571413ed41fc45fa162ac63dcd8

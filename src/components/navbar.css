@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 nav{
     height: 5rem;
     width: 100vw;
@@ -9,18 +8,6 @@ nav{
     top: 0;
     right: 100;
     z-index: 99;
-=======
-nav {
-  height: 5rem;
-  width: 100vw;
-  background-color: rgb(85, 165, 199);
-  display: grid;
-  place-items: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 99;
->>>>>>> e524aac416cc7571413ed41fc45fa162ac63dcd8
 }
 
 /* only show medium and small screen */
