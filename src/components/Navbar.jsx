@@ -17,13 +17,13 @@ const Navbar = () => {
     <nav>
         <div className="continer nav_continer">
             <Link to='/' className='logo' onClick={()=> setIsNavShowing(false)}>
-                <img src={Logo} alt="navlogo" />
+                <img src={Logo} alt="navlogo"  data-aos="fade-down" data-aos-delay="100"  data-aos-duration="1000"/>
             </Link>
-            <ul className={`nav_links ${isNavShowing ? 'show__nav' : 'hide__nav'}`}>
+            <ul  className={`nav_links ${isNavShowing ? 'show__nav' : 'hide__nav'}`}>
                 {
                     links.map(({name,path},index)=>{
                         return (
-                            <li key={index}>
+                            <li key={index}  >
                                 <NavLink to={path} className={({isActive})=> isActive ? 'active-nav' : ''}
                                 onClick={()=> setIsNavShowing(prev => !prev)}
                                 >{name}</NavLink>
@@ -32,7 +32,7 @@ const Navbar = () => {
                     })
                 }
             </ul>
-            <button className="nav__toggle" onClick={()=> setIsNavShowing(prev => !prev)}>
+            <button className="nav__toggle"  onClick={()=> setIsNavShowing(prev => !prev)}>
                {
                     isNavShowing ? <AiOutlineClose/> :  <AiOutlineBars/>
                }

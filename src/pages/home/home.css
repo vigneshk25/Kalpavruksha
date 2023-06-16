@@ -1,5 +1,5 @@
 .main__header{
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 3rem);
     display: grid;
     margin-top: 3rem;
@@ -15,6 +15,7 @@
     justify-content: space-between;
     gap: 8rem;
     margin: 10px;
+    
 
 }
 
@@ -26,11 +27,14 @@
 }
 
 .main__header-left h1{
-    font-size: 36px;
+    font-size: 34px;
+   
+
 }
 
 .main__header-left p{
      margin: 1rem 0 3.5rem;
+     font-size: 14px;
 }
 
 a{
@@ -45,33 +49,6 @@ img{
 }
 
 
-
-.btn{
-    color: white;
-    width: fit-content;
-    margin: 0 auto;
-    padding: 0.9rem 2rem;
-    background:  rgb(85, 165, 199);
-    border-radius: 1.5rem;
-    transition: all 500ms ease;
-}
-
-.btn:hover{
-    background-color: green;
-    color:  white;
-    border: 1px solid  rgb(85, 165, 199);
-}
-
-.btn.lg{
-    padding: 1.2rem 3rem;
-    border-radius: 2rem;
-    font-size: 1.1rem;
-}
-
-.btn.sm{
-    padding: 0.4rem 1.2rem;
-    font-size: 0.9rem;
-}
 
 .main__header-right{
     display: grid;
@@ -89,6 +66,7 @@ img{
 
 
 
+/* animation */
 
 
 /* home care */
@@ -108,8 +86,8 @@ img{
     justify-content: space-evenly;
 }
 .iconImg{
-    width: 150px;
-    height: 150px;
+    width: auto;
+    height: auto;
 }
 
 
@@ -175,22 +153,61 @@ img{
     margin: auto;
     padding: 10px;
 }
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.msgs{
+    width: 35px;
+}
+.doc{
+    width: 50px;
+}
 
+.phoneCall{
+    width: 25px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
+.pen{
+    width: 35px;
+}
 
 /* get in touch */
 
-.getInTouch{
-    height: calc(100vh - 18rem);
+.getInTouch {
+    height: calc(110vh - 11rem);
     text-align: center;
     align-items: center;
     margin: auto;
-}
-#name{
+  }
+  #name,
+  #email,
+  #phone {
     border: 1px solid black;
     width: 30%;
-    padding: 10px 8px ;
-}
+    padding: 10px 8px;
+  }
+  #name:focus {
+    background-color: #e3f4f4;
+    color: rgb(0, 0, 0);
+    font-size: large;
+  }
+  #email:focus {
+    background-color: #e3f4f4;
+    color: rgb(0, 0, 0);
+    font-size: large;
+  }
+  #phone:focus {
+    background-color: #e3f4f4;
+    color: rgb(0, 0, 0);
+    font-size: large;
+  }
 .msgBtn{
     padding: 20px;
     background-color: rgb(85, 165, 199); 
@@ -235,4 +252,683 @@ img{
 .aboutusimg{
     width: 25rem;
     height: 20rem;
+}
+
+.msgBtn {
+    margin-top: 1rem;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #55a5c7;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+.msgBtn:hover {
+    color: white;
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .msgBtn:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  .msgBtn::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .msgBtn:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media screen  tab view */
+
+@media screen and (max-width : 929px) {
+    .main__header{
+        width: 100vw;
+        height: calc(100vh - 5rem);
+        display: grid;
+        margin-top: 1rem;
+        place-items: center;
+        background-color: whitesmoke;
+    }
+    
+    .main__header-container{
+        height:70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .main__header-left{
+        margin-left: 40px;
+        margin-top: 1rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .main__header-left h1{
+        font-size: 38px;
+    }
+    
+    .main__header-left p{
+        font-size: 22px;
+         margin: 1rem 0 3.5rem;
+    }
+    
+    a{
+        color: #000;
+    }
+    
+    img{
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    
+    
+    .btn{
+        color: white;
+        margin: 0 auto;
+        padding: 2rem 4rem;
+        background:  rgb(85, 165, 199);
+        border-radius: 1.5rem;
+        transition: all 500ms ease;
+    }
+    
+    .btn:hover{
+        background-color: green;
+        color:  white;
+        border: 1px solid  rgb(85, 165, 199);
+    }
+    
+    .btn.lg{
+        padding: 1.2rem 3rem;
+        border-radius: 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .btn.sm{
+        padding: 0.4rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .main__header-right{
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
+    
+    .main_header-cricle{
+        width: 35rem;
+        height: 25rem;
+    }
+    .main_header-image{
+        position: relative;
+    }
+
+        /* home care */
+
+        .whyKV{
+            width: 100%;
+            height: calc(100vh - 2rem);
+        }
+
+        .homeCare{
+            text-align: center;
+            padding: 1rem;
+        }
+        .icon_pra{
+            padding: 3rem 9rem;
+            display: grid;
+            grid-template-columns: 30rem 1fr ; 
+            row-gap: 50px;
+            align-items: center;
+            margin: auto;
+        }
+        .iconImg{
+            width: 250px;
+            height: 250px;
+        }
+        .icon_pra h3{
+            font-size:38px;
+        }
+
+        /* vison */
+        .vison{
+            padding: 2rem;
+            background-color: rgb(218, 216, 216);
+            width: 90%;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 30px;
+            border-radius: 50px 1px;
+
+        }
+        .visionFlex{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .visionLeft{
+            width: 60% ;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+        }
+        .visionLeft>h2{
+            margin: 10px;
+            font-size: 3rem;
+        }
+        .visionLeft p{
+            font-size: 1.5rem;
+        }
+        .visionImg{
+            align-items: center;
+            margin: auto;
+            width: 100%;
+            height: 28rem;
+        }
+        /* servics */
+
+        .servics{
+            width: 100vw;
+            height: calc(100vh - -20rem);
+        }
+
+        .servics_text{
+            text-align: center;
+            padding: 1rem;
+        }
+        .servics_text h2 {
+            font-size: 4rem;
+        }
+        .service_icon{
+            padding: 3rem 9rem;
+            display: grid;
+            flex-direction: column;
+            grid-template-columns: 30rem 1fr ; 
+        }
+        .iconImg{
+            width: 200px;
+            height: 200px;
+        }
+        .readmore1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .ser_pra{
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+            font-size: 1.8rem;
+        }
+        .service_icon div h3{
+            font-size: 32px;
+        }
+        .readmore1{
+            font-size: 32px;
+        }
+
+
+        /* get in touch */
+
+        .getInTouch{
+            height: calc(100vh - 20rem);
+            text-align: center;
+            align-items: center;
+            margin: auto;
+        }
+        .getInTouch div p{
+            font-size: 24px;
+        }
+        #name{
+            border: 1px solid black;
+            width: 80%;
+            padding: 20px 300px ;
+        }
+        .msgBtn{
+            font-size: 22px;
+            padding: 25px 200px;
+            background-color: rgb(85, 165, 199); 
+            font-family: poppins;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        .inputBox{
+            font-size: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        .textName{
+            text-align: right;
+        }
+
+        /* About */
+        .aboutus{
+            padding: 2rem;
+            background-color: rgb(218, 216, 216);
+            width: 90%;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 30px;
+            border-radius: 50px 1px;
+
+        }
+        .aboutFlex{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .aboutLeft{
+            width: 60% ;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+        }
+        .aboutLeft>h2{
+            font-size: 3rem;
+            margin: 20px;
+        }
+        .aboutLeft>p{
+            width: 100%;
+            font-size: 22px;
+        }
+        .aboutusimg{
+            width: 100%;
+            height: 20rem;
+        }    
+
+        #name,
+        #email,
+        #phone {
+            border: 1px solid black;
+            width: 70%;
+            padding: 10px 10px;
+        }
+        #name:focus {
+            background-color: #e3f4f4;
+            color: rgb(0, 0, 0);
+            font-size: large;
+        }
+        #email:focus {
+            background-color: #e3f4f4;
+            color: rgb(0, 0, 0);
+            font-size: large;
+        }
+        #phone:focus {
+            background-color: #e3f4f4;
+            color: rgb(0, 0, 0);
+            font-size: large;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* media screen  mobile view */
+
+@media screen and (max-width : 460px) {
+    .main__header{
+        width: auto;
+        height: calc(100vh - 10rem);
+        display: grid;
+        margin-top: 1rem;
+        place-items: center;
+        background-color: whitesmoke;
+    }
+    
+    .main__header-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    .main__header-left{
+        width: 90%;
+        margin-left: 1px;
+        margin-top: 6rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .main__header-left h1{
+        font-size: 23px;
+    }
+    
+    .main__header-left p{
+        font-size: 13px;
+         margin: 1rem 0 3.5rem;
+    }
+    
+    a{
+        color: #000;
+    }
+    
+    img{
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 30px;
+    }
+    
+    
+    
+    .btn{
+        color: white;
+        margin: 2rem auto;
+        padding: 2rem 4rem;
+        background:  rgb(85, 165, 199);
+        border-radius: 1.5rem;
+        transition: all 500ms ease;
+    }
+    
+    .btn:hover{
+        background-color: green;
+        color:  white;
+        border: 1px solid  rgb(85, 165, 199);
+    }
+    
+    .btn.lg{
+        padding: 1.2rem 3rem;
+        border-radius: 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .btn.sm{
+        padding: 0.4rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .main__header-right{
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
+    
+    .main_header-cricle{
+        width: 25rem;
+        height: 25rem;
+    }
+    .main_header-image{
+        position: relative;
+    }
+
+        /* home care */
+
+        .whyKV{
+            width: 100%;
+            height: calc(100vh - -20rem);
+        }
+
+        .homeCare{
+            text-align: center;
+            padding: 1rem;
+        }
+        .icon_pra{
+            padding: 3rem 9rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+            align-items: center;
+            margin: auto;
+        }
+        .iconImg{
+            width: 150px;
+            height: 150px;
+        }
+        .icon_pra h3{
+            font-size:24px;
+        }
+
+        /* vison */
+        .vison{
+            padding: 2rem;
+            background-color: rgb(218, 216, 216);
+            width: 90%;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 30px;
+            border-radius: 50px 1px;
+
+        }
+        .visionFlex{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .visionLeft{
+            width: 100% ;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+        }
+        .visionLeft>h2{
+            margin: 10px;
+            font-size: 2rem;
+        }
+        .visionLeft p{
+            font-size: 1rem;
+        }
+        .visionImg{
+            align-items: center;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+        }
+        /* servics */
+
+        .servics{
+            width: 100%;
+            height: calc(100vh - -11rem);
+        }
+
+        .servics_text{
+            text-align: center;
+            padding: 1rem;
+        }
+        .servics_text h2 {
+            font-size: 2rem;
+        }
+        .service_icon{
+            padding: 3rem 5rem;
+            align-items: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .iconImg{
+            width: 150px;
+            height: 150px;
+        }
+        .readmore1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .ser_pra{
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        .service_icon div h3{
+            width: 100%;
+            font-size: 22px;
+        }
+        .readmore1{
+            font-size: 22px;
+        }
+
+
+        /* get in touch */
+        .getInTouch{
+            height: calc(100vh - 29rem);
+            text-align: center;
+            align-items: center;
+            margin: auto;
+        }
+        .getInTouch div p{
+            font-size: 16px;
+        }
+        .getInTouch div h1{
+            font-size: 27px;
+        }
+        #name{
+            border: 1px solid black;
+            width: 90%;
+            padding: 10px 150px ;
+        }
+        .msgBtn{
+            font-size: 18px;
+            padding: 15px 80px;
+            background-color: rgb(85, 165, 199); 
+            font-family: poppins;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        .inputBox{
+            font-size: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        .textName{
+            text-align: right;
+        }
+
+        /* About */
+        .aboutus{
+            padding: 2rem;
+            background-color: rgb(218, 216, 216);
+            width: 90%;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 30px;
+            border-radius: 50px 1px;
+
+        }
+        .aboutFlex{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .aboutLeft{
+            width: 100% ;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+        }
+        .aboutLeft>h2{
+            font-size: 2rem;
+            margin: 20px;
+        }
+        .aboutLeft>p{
+            width: 100%;
+            font-size: 13px;
+        }
+        .aboutusimg{
+            width: 100%;
+            height: 100%;
+        }    
+
+        #name,
+        #email,
+        #phone {
+            border: 1px solid black;
+            width: 70%;
+            padding: 10px 10px;
+        }
+        #name:focus {
+            background-color: #e3f4f4;
+            color: rgb(0, 0, 0);
+            font-size: large;
+        }
+        #email:focus {
+            background-color: #e3f4f4;
+            color: rgb(0, 0, 0);
+            font-size: large;
+        }
+        #phone:focus {
+            background-color: #e3f4f4;
+            color: rgb(0, 0, 0);
+            font-size: large;
+  }
 }

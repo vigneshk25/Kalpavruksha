@@ -7,6 +7,11 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 /* General style */
 body{
     font-family: 'poppins' , sans-serif;
@@ -40,4 +45,106 @@ img{
     display: block;
     object-fit: cover;
     width: 100%;
+}
+/* header about page */
+
+.header{
+    width: 100%;
+    margin-top: 5rem;
+    height: 20rem;
+    overflow: hidden;
+    border-bottom: 2px solid black;
+}
+
+.header_container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background: black;
+}
+.btn {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+  }
+  
+  .btn:active {
+    scale: 0.92;
+  }
+  
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+
+  
+.header_con_bg{
+    position: absolute;
+    width: 100%;
+}
+
+.header_con_bg img{
+    opacity: 0.5;
+}
+
+.header_content{
+    position: relative;
+    width: 44%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.header_content h2{
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.header_content p {
+    color: white;
+}
+
+
+
+/* media quries (medium screen) */
+@media screen and (max-width:1024px) {
+    .header{
+        width:100%;
+    }
+    .header_container{
+        width: 100%;
+
+    }
+}
+
+/* media quries (small screen) */
+@media screen and (max-width: 600px) {
+      section{
+         margin-top: 7rem;
+         }
+        .header{
+            height: fit-content;
+            width: auto;
+        }
+
+        .header_content{
+            width: 80%;
+            padding: 1rem 0;
+        }
+
+        .header_content p{
+            font-size: 0.85rem;
+        }
 }

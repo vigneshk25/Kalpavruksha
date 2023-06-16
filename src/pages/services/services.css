@@ -1,0 +1,147 @@
+.services_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: rem;
+}
+
+.services_section img{
+    width: 30%;
+    height: 30%;
+    margin: 1rem;
+}
+
+.serv_bor{
+    margin: 20px;
+    border-radius: 15px 50px; 
+    border: 3px solid rgb(85, 165, 199);
+    padding: 10px;
+}
+.serv_bors{
+    margin: 20px;
+    border-radius: 50px 15px; 
+    border: 3px solid rgb(85, 165, 199);
+    padding: 10px;
+}
+
+.services_section p{
+    width: 60%;
+    text-align: center;
+}
+
+
+.services_section_two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.services_section_two img{
+    width: 30%;
+    height: 30%;
+    margin: 1rem;
+}
+
+.services_section_two p{
+    width: 60%;
+    text-align: center;
+}
+
+
+/* media quries (medium screen) */
+@media screen and (max-width:1024px) {
+    .services_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        padding: 2rem;
+        border: 1px solid black;
+        gap: 20px;
+    }
+    
+    .services_section img{
+        width: 80%;
+        height: 80%;
+        margin: 1rem;
+    }
+    
+    .services_section p{
+        width: 90%;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    
+    .services_section_two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        padding: 2rem;
+        border: 1px solid black;
+        gap: 20px;
+    }
+    
+    .services_section_two img{
+        width: 80%;
+        height: 80%;
+        margin: 1rem;
+    }
+    
+    .services_section_two p{
+        width: 90%;
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+
+/* media quries (small screen) */
+@media screen and (max-width: 600px) {
+    .services_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px solid black;
+        gap: 20px;
+    }
+    
+    .services_section img{
+        width: 80%;
+        height: 80%;
+        margin: 1rem;
+    }
+    
+    .services_section p{
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    
+    .services_section_two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px solid black;
+        gap: 20px;
+    }
+    
+    .services_section_two img{
+        width: 80%;
+        height: 80%;
+        margin: 1rem;
+    }
+    
+    .services_section_two p{
+        width: 9cap;
+        font-size: 16px;
+        text-align: center;
+    }
+}

@@ -14,10 +14,6 @@ export const links = [
     {
         name: "Gallery",
         path: '/gallery'
-    },
-    {
-        name: "Contact",
-        path: '/contact'
-    },
-   
+    }
 ]
+

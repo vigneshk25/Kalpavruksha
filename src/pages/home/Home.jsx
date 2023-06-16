@@ -1,10 +1,16 @@
 import React from 'react'
 import './home.css';
 import { Link } from 'react-router-dom';
-import Image from '../../imgs/v204_725.png';
 import MainHeader from '../../components/MainHeader';
-import icon from '../../imgs/icon.png'
 import img1 from '../../imgs/img1.png'
+import GetinTouch from "./GetinTouch";
+import help from '../../imgs/help 1.png';
+import hosp from '../../imgs/hospice 1.png';
+import hospit from '../../imgs/hospital 1.png';
+import rebha from '../../imgs/rehabilitation 1.png';
+import med from '../../imgs/medical-equipment-with-heart-symbol 1.png';
+import med1 from '../../imgs/medicine 1.png';
+
 
 
 
@@ -14,30 +20,30 @@ const Home = () => {
     <MainHeader/>
       
       {/* program section */}
-      <div className='whyKV'>
-          <div className="homeCare">
+      <div className='whyKV' data-aos="fade-up" data-aos-delay="100"  data-aos-duration="3000">
+          <div className="homeCare" >
               <h2>Why Kalpavruksha</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore.</p>
           </div>
 
           <div className="icon_pra">
               <div>
-                <img src={icon} className='iconImg' alt="" />
+                <img src={help} className='iconImg' alt="" />
                 <h3>Home Care</h3>
               </div>
 
               <div>
-                <img src={icon} className='iconImg' alt="" />
+                <img src={hosp} className='iconImg' alt="" />
                 <h3>Home Care</h3>
               </div>
 
               <div>
-                <img src={icon} className='iconImg' alt="" />
+                <img src={hospit} className='iconImg' alt="" />
                 <h3>Home Care</h3>
               </div>
 
               <div>
-                <img src={icon} className='iconImg' alt="" />
+                <img src={rebha} className='iconImg' alt="" />
                 <h3>Home Care</h3>
               </div>
           </div>
@@ -45,7 +51,7 @@ const Home = () => {
 
       {/* VISON */}
       
-      <div className='vison'> 
+      <div className='vison' data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000"> 
         <div className='visionFlex'>
           <div className='visionLeft'>
             <h2>VISION</h2>
@@ -60,7 +66,7 @@ const Home = () => {
 
       {/* MISSION */}
       
-      <div className='vison'> 
+      <div className='vison' data-aos="fade-left" data-aos-delay="100"  data-aos-duration="1000"> 
         <div className='visionFlex'>
           <div>
               <img src={img1} alt="visonimg" className='visionImg' />
@@ -76,25 +82,25 @@ const Home = () => {
 
 
       {/* service */}
-      <div className='servics'>
+      <div className='servics'  data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
           <div className="servics_text">
               <h2>SERVICES</h2>
               <p className='ser_pra' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolorem quam, mollitia natus quis doloremque obcaecati maiores rem rerum nisi optio explicabo veniam ad eligendi a voluptatibus sed beatae! Inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore.</p>
           </div>
 
-          <div className="service_icon">
+          <div className="service_icon" >
               <div>
-                <img src={icon} className='iconImg' alt="" />
+                <img src={med} className='iconImg' alt="" />
                 <h3>Home Care</h3>
               </div>
 
               <div>
-                <img src={icon} className='iconImg' alt="" />
+                <img src={med1} className='iconImg' alt="" />
                 <h3>Home Care</h3>
               </div>
 
               <div>
-                <img src={icon} className='iconImg' alt="" />
+                <img src={rebha} className='iconImg' alt="" />
                 <h3>Home Care</h3>
               </div>
               
@@ -106,7 +112,7 @@ const Home = () => {
 
        {/* About */}
       
-      <div className='aboutus'> 
+      <div className='aboutus'data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000"> 
         <div className='aboutFlex'>
           <div className='aboutLeft'>
             <h2>About Us</h2>
@@ -120,28 +126,8 @@ const Home = () => {
       </div>
 
 
-      {/* get in touch */}
-
-      <div className='getInTouch'>
-        <div>
-          <h1>Get in Touch</h1>
-          <p>Let us know how we can help </p>
-        </div>
-
-        <div className='inputBox'>
-          <p className='textName'>Name</p>
-          <input type="text" name="name" id="name" placeholder='Your Full Name' />
-
-          <p className='textName'>Email</p>
-          <input type="text" name="name" id="name" placeholder='me@mail.com' />
-
-          <p className='textName'>Phone Number</p>
-          <input type="text" name="name" id="name" placeholder='+91 00000 00000' />
-
-          <div><button className='msgBtn'>Send Message</button></div>
-          
-        </div>
-      </div>
+       {/* get in touch */}
+       <GetinTouch  />
     </>
   )
 }
