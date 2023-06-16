@@ -1,20 +1,18 @@
-import React from 'react';
-import { useState } from 'react';
-import {Link , NavLink} from 'react-router-dom'
-import { links } from '../data';
-import {AiOutlineBars} from 'react-icons/ai'
-import {AiOutlineClose} from 'react-icons/ai'
-import './navbar.css'
-import  Logo from '../imgs/kv-1.png'
+import React from "react";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { links } from "../data";
+import { AiOutlineBars } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
+import "./navbar.css";
+import Logo from "../imgs/kv-1.png";
 
 const Navbar = () => {
-    const [isNavShowing, setIsNavShowing] = useState(false);
-
-
-
+  const [isNavShowing, setIsNavShowing] = useState(false);
 
   return (
     <nav>
+<<<<<<< HEAD
         <div className="continer nav_continer">
             <Link to='/' className='logo' onClick={()=> setIsNavShowing(false)}>
                 <img src={Logo} alt="navlogo"  data-aos="fade-down" data-aos-delay="100"  data-aos-duration="1000"/>
@@ -38,8 +36,34 @@ const Navbar = () => {
                }
             </button>
         </div>
+=======
+      <div className="continer nav_continer">
+        <Link to="/" className="logo" onClick={() => setIsNavShowing(false)}>
+          <img src={Logo} alt="navlogo" />
+        </Link>
+        <ul className={`nav_links ${isNavShowing ? "show__nav" : "hide__nav"}`}>
+          {links.map(({ name, path }, index) => {
+            return (
+              <li key={index}>
+                <NavLink
+                  to={path}
+                  className={({ isActive }) => (isActive ? "active-nav" : "")}
+                  onClick={() => setIsNavShowing((prev) => !prev)}>
+                  {name}
+                </NavLink>
+              </li>
+            );
+          })}
+        </ul>
+        <button
+          className="nav__toggle"
+          onClick={() => setIsNavShowing((prev) => !prev)}>
+          {isNavShowing ? <AiOutlineClose /> : <AiOutlineBars />}
+        </button>
+      </div>
+>>>>>>> e524aac416cc7571413ed41fc45fa162ac63dcd8
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .about_section_img{
     border-radius: 50%;
     width: 20rem;
@@ -207,3 +208,64 @@
         padding: 20px;
     }
 }
+=======
+.image {
+  display: flex;
+  object-fit: contain;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  float: left;
+  border: 10px solid green;
+}
+.imageN {
+  display: flex;
+
+  object-fit: contain;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+
+  float: right;
+}
+.imageN:hover {
+  width: 250px;
+  height: 250px;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  padding: 0.5rem;
+}
+.nameN {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.about {
+  right: 0;
+  color: green;
+  float: left;
+}
+.aboutN {
+  color: red;
+  float: right;
+}
+
+/*Nurse Images */
+.contain {
+  display: flex;
+  flex-direction: row;
+}
+.NurseImg {
+  margin: 0.5rem;
+  width: 150px;
+  height: 150px;
+
+  object-fit: contain;
+}
+>>>>>>> e524aac416cc7571413ed41fc45fa162ac63dcd8
