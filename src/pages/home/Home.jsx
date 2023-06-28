@@ -23,28 +23,28 @@ const Home = () => {
       <div className='whyKV' data-aos="fade-up" data-aos-delay="100"  data-aos-duration="3000">
           <div className="homeCare" >
               <h2>Why Kalpavruksha</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore.</p>
+              <p>We Provide Total Senior Healthcare Solutions</p>
           </div>
 
           <div className="icon_pra">
-              <div>
+              <div className='border'>
                 <img src={help} className='iconImg' alt="" />
-                <h3>Home Care</h3>
+                <h3>Comprehensive medical care</h3>
               </div>
 
-              <div>
+              <div className='border'>
                 <img src={hosp} className='iconImg' alt="" />
-                <h3>Home Care</h3>
+                <h3>Safe and secure living space</h3>
               </div>
 
-              <div>
+              <div className='border'>
                 <img src={hospit} className='iconImg' alt="" />
-                <h3>Home Care</h3>
+                <h3>Boarding facilities</h3>
               </div>
 
-              <div>
+              <div className='border'>
                 <img src={rebha} className='iconImg' alt="" />
-                <h3>Home Care</h3>
+                <h3>Dedicated staff</h3>
               </div>
           </div>
 
@@ -53,19 +53,22 @@ const Home = () => {
         </div>
 
       {/* VISON */}
+      <div className='allmain'>
       
       <div className='vison' data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000"> 
         <div className='visionFlex'>
           <div className='visionLeft'>
             <h2>VISION</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Cupiditate nihil amet similique, fugit officia sed, dicta soluta
-              eius, eaque repellendus laborum blanditiis? Minima obcaecati ex
-              deleniti alias mollitia ipsam consequuntur? Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Ipsa ea commodi iste autem
-              aperiam magni exercitationem? Nam quaerat nulla architecto.
-            </p>
+            <ul className='orderList'>
+                <li>* Become a leading provider of specialized care for the elderly, paralysis patients, and stroke survivors.
+            </li>
+            <li>
+                 * Deliver the highest standard of care and rehabilitation, tailored to the specific needs of each individual.
+            </li>
+            <li>
+                * Offer a range of innovative services and programs that promote holistic healing and well-being</li>
+            <li>* Collaborate with experts and stay up-to-date with the latest advancements in geriatric care, paralysis rehabilitation, stroke recovery, and recreational therapies.</li>
+            </ul>
           </div>
           <div>
             <img src={img1} alt="visonimg" className="visionImg" />
@@ -82,51 +85,48 @@ const Home = () => {
           </div>
           <div className="visionLeft">
             <h2>MISSION</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Cupiditate nihil amet similique, fugit officia sed, dicta soluta
-              eius, eaque repellendus laborum blanditiis? Minima obcaecati ex
-              deleniti alias mollitia ipsam consequuntur? Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Ipsa ea commodi iste autem
-              aperiam magni exercitationem? Nam quaerat nulla architecto.
-            </p>
+            <ul className='orderList'>
+                <li>* Provide compassionate and comprehensive care for the geriatric population, individuals with paralysis, stroke survivors, and promote their well-being.</li>
+                <li>* Foster independence, maximize functional abilities, and restore dignity and joy in the lives of our clients.</li>
+                <li>* Offer personalized care, professional rehabilitation services, and engaging recreational activities.</li>
+                <li>* Continuously innovate and collaborate with experts in the field to stay at the forefront of advancements in geriatric care, paralysis rehabilitation, stroke recovery, and recreational therapies.</li>
+            </ul>    
           </div>
         </div>
+      </div>
+
       </div>
 
       {/* service */}
       <div className='servics'  data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
           <div className="servics_text">
               <h2>SERVICES</h2>
-              <p className='ser_pra' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolorem quam, mollitia natus quis doloremque obcaecati maiores rem rerum nisi optio explicabo veniam ad eligendi a voluptatibus sed beatae! Inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, labore.</p>
+              <p className='ser_pra' >Kalpavruksha offers "Exceptional care and a warm community for a fulfilling retirement. Embrace worry-free living in a personalized, home-like environment."</p>
           </div>
 
           <div className="service_icon" >
-              <div>
+              <div className='border'>
                 <img src={med} className='iconImg' alt="" />
-                <h3>Home Care</h3>
+                <h3>Geriatric Home Care</h3>
               </div>
 
-              <div>
-                <img src={med1} className='iconImg' alt="" />
-                <h3>Home Care</h3>
+              <div className='border'> 
+              <img src={med1} className='iconImg' alt="" />
+                <h3>Transitional Care</h3>
               </div>
 
-              <div>
+              <div className='border'>
                 <img src={rebha} className='iconImg' alt="" />
-                <h3>Home Care</h3>
+                <h3>Critical Care</h3>
               </div>
               
           </div>
-
-         
-        </div>
+        
 
         <Link to="/services" className="readmore1">
           <h3>Read More</h3>
         </Link>
-
-      {/* About */}
+        </div>
 
        {/* About */}
       
@@ -135,12 +135,7 @@ const Home = () => {
           <div className='aboutLeft'>
             <h2>About Us</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Cupiditate nihil amet similique, fugit officia sed, dicta soluta
-              eius, eaque repellendus laborum blanditiis? Minima obcaecati ex
-              deleniti alias mollitia ipsam consequuntur? Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Ipsa ea commodi iste autem
-              aperiam magni exercitationem? Nam quaerat nulla architecto.
+            "Discover the essence of Kalpavruksha Care and Rehab Services. We are dedicated to providing exceptional care, fostering a warm community, and creating a genuine home-like environment for seniors. Experience our commitment to enriching lives and ensuring a fulfilling retirement journey."
             </p>
             <Link to="/about">
               <h3> Read More</h3>
@@ -155,6 +150,21 @@ const Home = () => {
 
        {/* get in touch */}
        <GetinTouch  />
+
+
+
+       {/* maps */}
+
+       <iframe className='maps' title='kalpavruksha Map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.307022837881!2d77.37967781197047!3d12.903937862320502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae382c35fca29d%3A0xf6a96ee3cf98ce71!2skalpavruksha%20health%20care%20center!5e1!3m2!1sen!2sin!4v1687246300549!5m2!1sen!2sin" 
+       width="600"
+        height="450"
+         style={{border:"100"}}
+          allowFullScreen={true}
+           loading="eager"
+            referrerPolicy="no-referrer-when-downgrade">
+              
+
+            </iframe>
     </>
   );
 };

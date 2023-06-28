@@ -2,8 +2,6 @@
 
 footer{
     background-color: rgb(85, 165, 199);
-    margin-top: 7rem;
-    padding-top: 3rem;
     font-size: 0.9rem;
     color: black;
 }
@@ -89,7 +87,6 @@ footer{
     footer{
         background-color: rgb(85, 165, 199);
         width: 100%;
-        margin-top: 7rem;
         padding-top: 3rem;
         font-size: 0.9rem;
         color: black;
@@ -185,8 +182,6 @@ footer{
     footer{
         background-color: rgb(85, 165, 199);
         width: 100%;
-        margin-top: 7rem;
-        padding-top: 3rem;
         font-size: 0.9rem;
         color: black;
     }

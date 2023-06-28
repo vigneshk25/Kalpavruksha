@@ -39,7 +39,7 @@ const Gallery = ({galleryPhotos}) => {
   return (
     <>
       <Header title='Our Gallery' image={headerImg}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime adipisci harum blanditiis hic ducimus cumque labore mollitia repellendus quis? Omnis asperiores nulla sapiente illum autem 
+      "Explore the vibrant world of Kalpavruksha Care and Rehab Services. Our gallery captures the moments of joy, connection, and well-being within our warm and inclusive community. Witness the essence of exceptional care and vibrant senior living through our captivating visual journey." 
       </Header>
 
       <div className="oneTwo">

@@ -28,7 +28,7 @@ const GetinTouch = () => {
     window.open(whatsappLink, "_blank");
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} id="getIn">
       <div className="getInTouch" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
         <div>
 
@@ -86,7 +86,7 @@ const GetinTouch = () => {
             maxLength={240}
             type="text"
             name="email"
-            id="email"
+            id="query"
             placeholder="Enter your query/message"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
