@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './services.css';
 import Header from '../../components/Header.jsx';
 import headerImg from '../../imgs/img1.png';
@@ -6,6 +6,9 @@ import ser from '../../imgs/setone.jpg';
 import ser2 from '../../imgs/settwo.jpg';
 
 const Services = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+},[])
   return (
     <>
       <Header title='Our Services' image={headerImg}>

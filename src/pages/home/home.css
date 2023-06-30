@@ -693,15 +693,14 @@ background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBo
 
 /* media screen  mobile view */
 
-@media screen and (max-width : 460px) {
+@media screen and (max-width : 460px) {    
     .main__header{
         width: auto;
-        height: calc(100vh - 10rem);
+        height: auto;
         display: grid;
         margin-top: 1rem;
         place-items: center;
-        background-color: #357266;
-
+        background-color: #60837c;
     }
     
     .main__header-container{
@@ -738,7 +737,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBo
         display: block;
         object-fit: cover;
         width: 100%;
-        border-radius: 30px;
     }
     
     
@@ -777,7 +775,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBo
     
     .main_header-cricle{
         width: 25rem;
-        height: 25rem;
+        height: 100%;
+        padding-bottom: 10px;
     }
     .main_header-image{
         position: relative;
@@ -879,14 +878,16 @@ background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBo
             margin: auto;
             display: flex;
             flex-direction: column;
+            gap: 2rem;
         }
         .iconImg{
+            object-fit: fill;
             width: 200px;
             height: 200px;
         }
         .readmore1{
             text-align: center;
-            text-decoration: underline;
+            text-decoration: none;
         }
         .ser_pra{
             width: 100%;
@@ -906,7 +907,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBo
 
         /* get in touch */
         .getInTouch{
-            height: calc(100vh - 20rem);
+            height: auto;
             text-align: center;
             align-items: center;
             margin: auto;
@@ -924,7 +925,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBo
         }
         .msgBtn{
             font-size: 18px;
-            padding: 15px 80px;
+            padding: 15px 20px;
             background-color: rgb(85, 165, 199); 
             color: black;
             font-family: poppins;

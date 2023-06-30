@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.572dd2c6.css",
+    "main.js": "/static/js/main.f5cb5125.js",
+    "static/media/about us image 1.jpg": "/static/media/about us image 1.19609935d3f018454cd0.jpg",
+    "static/media/land page image 1.jpg": "/static/media/land page image 1.f364c15c1af3d438a3c0.jpg",
+    "static/media/insta.gif": "/static/media/insta.b6be3f350730ea37617c.gif",
+    "static/media/setone.jpg": "/static/media/setone.b612678d1fb5311d6d00.jpg",
+    "static/media/settwo.jpg": "/static/media/settwo.ed52e7b0d8a1c47ea6c8.jpg",
+    "static/media/2.png": "/static/media/2.624340b11d49a96eb1c1.png",
+    "static/media/fb.gif": "/static/media/fb.fc7db26b9196455691bc.gif",
+    "static/media/img1.png": "/static/media/img1.0ce9f513badda77b956c.png",
+    "static/media/dovu.gif": "/static/media/dovu.ea84ec56115dacbfd7ff.gif",
+    "static/media/yt.gif": "/static/media/yt.59641024064031e2032d.gif",
+    "static/media/pen.gif": "/static/media/pen.56e6aa109b40c58db219.gif",
+    "static/media/24-7.png": "/static/media/24-7.63d5a3cc3881759d0afa.png",
+    "index.html": "/index.html",
+    "main.572dd2c6.css.map": "/static/css/main.572dd2c6.css.map",
+    "main.f5cb5125.js.map": "/static/js/main.f5cb5125.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.572dd2c6.css",
+    "static/js/main.f5cb5125.js"
+  ]
+}

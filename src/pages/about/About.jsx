@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Header from '../../components/Header';
 import headerImg from '../../imgs/img1.png';
 import img1 from '../../imgs/img1.png';
@@ -10,6 +10,9 @@ import '../about/about.css'
 import './about.css';
 
 const About = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+},[])
   return (
     <>
       <Header title='About Us' image={headerImg}  >

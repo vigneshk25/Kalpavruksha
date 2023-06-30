@@ -12,16 +12,16 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+
 }
 
 /* General style */
 body {
   font-family: "poppins", sans-serif;
+  
   color: black;
   line-height: 1.7;
-
-  overflow-x: hidden;
-
   background-color: white;
 }
 .continer {
@@ -139,6 +139,10 @@ img{
 
 /* media quries (small screen) */
 @media screen and (max-width: 600px) {
+  html,body{
+    overflow-x: hidden;
+
+  }
       section{
          margin-top: 7rem;
          }

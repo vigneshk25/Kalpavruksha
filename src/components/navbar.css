@@ -124,7 +124,7 @@ nav{
   }
 
   .nav_links li a {
-    background-color: rgb(85, 165, 199);
+    background-color: #41aeba;
     height: 100%;
     width: 100%;
     display: flex;

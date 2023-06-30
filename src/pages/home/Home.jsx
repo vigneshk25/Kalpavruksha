@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './home.css';
 import { Link } from 'react-router-dom';
 import MainHeader from '../../components/MainHeader';
@@ -10,11 +10,16 @@ import hospit from '../../imgs/hospital 1.png';
 import rebha from '../../imgs/rehabilitation 1.png';
 import med from '../../imgs/medical-equipment-with-heart-symbol 1.png';
 import med1 from '../../imgs/medicine 1.png';
+import twofour from '../../imgs/24-7.png';
 
 
 
 
 const Home = () => {
+
+    useEffect(()=>{
+      window.scrollTo(0,0)
+  },[])
   return (
     <>
       <MainHeader />
@@ -116,7 +121,7 @@ const Home = () => {
               </div>
 
               <div className='border'>
-                <img src={rebha} className='iconImg' alt="" />
+                <img src={twofour} className='iconImg' alt="" />
                 <h3>Critical Care</h3>
               </div>
               
